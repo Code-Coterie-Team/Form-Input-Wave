@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: steelblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    padding: 10px 0 13px;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    border-radius: 4px;
+    width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.email,
+.password {
+    margin: 20px 0 30px;
+    /* position: relative; */
+}
+
+div>input {
+    background-color: unset;
+    border: 0;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding: 15px 0;
+    width: 100%;
+    color: white;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+div>label {
+    /* position: absolute; */
+    /* top: 15px; */
+    /* color: white; */
+    letter-spacing: -2px;
+}
+
+.btnLogin {
+    padding: 13px;
+    background: lightblue;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+
+}
+
+.text {
+    margin-top: 30px;
+    margin-bottom: 13px;
+}
+
+.active {
+    border-bottom-color: lightblue;
+}
+
+.letter {
+    position: relative;
+    top: 34px;
+    color: white;
+}
+
+.letterActive {
+    animation: 0.3s ease moveTop;
+    color: lightblue;
+}
+
+.letterActiveBottom {
+    animation: 0.3s ease moveBottom;
+    color: white;
+}
+
+@keyframes moveTop {
+    0% {
+        top: 34px;
+        color: white;
+    }
+
+    100% {
+        top: 18px;
+        color: lightblue;
+    }
+}
+
+@keyframes moveBottom {
+    0% {
+        top: 18px;
+        color: lightblue;
+    }
+
+    100% {
+        top: 34px;
+        color: white;
+    }
+}
